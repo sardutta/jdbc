@@ -6,7 +6,7 @@ public class MetaData
 {
 	public static void  main(String[]args) throws SQLException     
 	{         
-		Connection myConn=DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb","root","3733");               
+		Connection myConn=DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb","root","qwerty");               
 		Statement stmt=myConn.createStatement();         
 		DatabaseMetaData dbmd=myConn.getMetaData();       
 		System.out.println("DB name"+dbmd.getDatabaseProductName());      
