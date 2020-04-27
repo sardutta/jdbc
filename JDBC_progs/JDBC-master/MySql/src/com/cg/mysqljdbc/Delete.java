@@ -10,7 +10,7 @@ public class Delete
 		ResultSet myRes = null;
 		try
 		{
-			Connection myCon=  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+			Connection myCon=  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 			//System.out.println("got connection");
 			//create statement
 			Statement mystmt = myCon.createStatement();
