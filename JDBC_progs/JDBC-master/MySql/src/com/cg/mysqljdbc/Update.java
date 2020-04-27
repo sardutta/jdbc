@@ -10,7 +10,7 @@ public class Update
 		ResultSet myRes = null;
 		try 
 		{
-			Connection mycon =  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+			Connection mycon =  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 			//System.out.println("got connection");
 			//create statement
 			Statement mystmt = mycon.createStatement();
