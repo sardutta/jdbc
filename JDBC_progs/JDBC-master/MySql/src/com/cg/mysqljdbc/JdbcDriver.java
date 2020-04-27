@@ -9,11 +9,11 @@ public class JdbcDriver
 		//get connection to the database
 		try 
 		{
-			Connection mycon= DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb","root","3733");
+			Connection mycon= DriverManager.getConnection("jdbc:mysql://localhost:3306/librarydb","root","qwerty");
 			//create a statement
 			Statement stmt= mycon.createStatement();
 			//execute sql query
-			String sql= "insert into books(BookNum,BookName,AuthorName) values(007,'James Bond','KG')";
+			String sql= "insert into books(BookNum,BookName,AuthorName) values(10,'my_book','alexz')";
 			stmt.executeUpdate(sql);
 			//String sqldel=
 			//process the resultset
