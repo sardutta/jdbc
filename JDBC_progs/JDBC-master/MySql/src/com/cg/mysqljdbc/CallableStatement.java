@@ -13,7 +13,7 @@ public class CallableStatement
 	     try 
 	     {
 
-	    	 Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+	    	 Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 	    	 //create a statement
 	    	 Statement mystmt =myConn.createStatement();
 
