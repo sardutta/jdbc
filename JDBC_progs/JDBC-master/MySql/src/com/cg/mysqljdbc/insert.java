@@ -10,7 +10,7 @@ public class insert
 		ResultSet myRes = null;
 		try 
 		{
-			Connection myCon=  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+			Connection myCon=  DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 			//System.out.println("got connection");
 			//create statement
 			Statement mystmt = myCon.createStatement();
@@ -20,12 +20,12 @@ public class insert
 			 
 
 			//Set the parameters 
-			myStmnt.setInt(1,13);
-			myStmnt.setString(2,"Smith");
-			myStmnt.setString(3,"Steve");
-			myStmnt.setString(4,"steve.smith@foo.com");
-			myStmnt.setString(5,"Consultant");
-			myStmnt.setDouble(6,85000);
+			myStmnt.setInt(1,15);
+			myStmnt.setString(2,"Sam");
+			myStmnt.setString(3,"Stevense");
+			myStmnt.setString(4,"stevesam@hotmail.com");
+			myStmnt.setString(5,"senior Consultant");
+			myStmnt.setDouble(6,80000);
 			myStmnt.executeUpdate();
 			myRes= mystmt.executeQuery("select * from employees");
 			while(myRes.next())
