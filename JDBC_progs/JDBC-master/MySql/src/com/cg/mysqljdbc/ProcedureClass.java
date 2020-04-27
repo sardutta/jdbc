@@ -9,7 +9,7 @@ public class ProcedureClass
          //get connection to the database
     	 String pdept = "Engineering";
     	 int increaseAmount = 100000;
-    	 Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+    	 Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
     	 PreparedStatement stmt = mycon.prepareCall("{call increase_salaries_for_department(?, ?)}");
     	 stmt.setString(1, pdept);
     	 stmt.setDouble(2, increaseAmount);
@@ -27,7 +27,7 @@ public class ProcedureClass
    {
       try 
       {
-    	  Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+    	  Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
     	  PreparedStatement stmt= mycon.prepareStatement("select id, salary from employees where department = ?");
           stmt.setString(1, department_name);
           ResultSet rs = stmt.executeQuery();
