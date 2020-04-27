@@ -6,7 +6,7 @@ public class InsertingImage
 {
    public static void main(String args[]) throws Exception 
    {
-	   Connection mycon=DriverManager.getConnection("jdbc:mysql://localhost:3306/myproject","root","3733");               
+	   Connection mycon=DriverManager.getConnection("jdbc:mysql://localhost:3306/myproject","root","qwerty");               
 	   Statement stmt=mycon.createStatement(); 
 	   //mycon.setAutoCommit(false);
        //Inserting values
@@ -15,9 +15,9 @@ public class InsertingImage
        pstmt.setInt(1, 101);
        pstmt.setString(2, "Grayson");
        pstmt.setInt(3, 15000);
-       FileInputStream fin = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\1.jpg");
+       FileInputStream fin = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\mypic.jpg");
        pstmt.setBinaryStream(4, fin);
-       FileInputStream fin2 = new FileInputStream("H:\\phone\\Aleem Shaik.docx");
+       FileInputStream fin2 = new FileInputStream("H:\\phone\\sdatta.docx");
        pstmt.setBinaryStream(5, fin2);
        pstmt.execute();
        
@@ -25,9 +25,9 @@ public class InsertingImage
        pstmt1.setInt(1, 102);
        pstmt1.setString(2, "Jeremiah");
        pstmt1.setInt(3, 15000);
-       FileInputStream fin3 = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\1.jpg");
+       FileInputStream fin3 = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\mypic.jpg");
        pstmt1.setBinaryStream(4, fin3);
-       FileInputStream fin4 = new FileInputStream("H:\\phone\\Aleem Shaik.docx");
+       FileInputStream fin4 = new FileInputStream("H:\\phone\\sdatta.docx");
        pstmt1.setBinaryStream(5, fin4);
        pstmt1.execute();
        
@@ -35,9 +35,9 @@ public class InsertingImage
        pstmt2.setInt(1, 103);
        pstmt2.setString(2, "Magi");
        pstmt2.setInt(3, 150000);
-       FileInputStream fin5 = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\1.jpg");
+       FileInputStream fin5 = new FileInputStream("C:\\Users\\Intel\\Desktop\\pic\\mypic.jpg");
        pstmt2.setBinaryStream(4, fin5);
-       FileInputStream fin6 = new FileInputStream("H:\\phone\\Aleem Shaik.docx");
+       FileInputStream fin6 = new FileInputStream("H:\\phone\\sdatta.docx");
        pstmt2.setBinaryStream(5, fin6);
        pstmt2.execute();
        
