@@ -11,7 +11,7 @@ public class Employee
 		
 			try 
 			{
-				Connection mycon= DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+				Connection mycon= DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 				//create a statement
 				Statement mystmt= mycon.createStatement();
 				//prepare statement
