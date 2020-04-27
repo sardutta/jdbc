@@ -4,7 +4,7 @@ public class DataBaseMetaDataExample
 {
 	public static void main(String[] args) throws SQLException 
 	{
-		Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+		Connection mycon = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 		
 		Statement stmt =mycon.createStatement();
 		
