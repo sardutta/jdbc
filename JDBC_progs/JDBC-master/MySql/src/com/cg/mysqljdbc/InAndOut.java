@@ -11,7 +11,7 @@ public class InAndOut
 
 	    	 try 
 	    	 {
-				Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","3733");
+				Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo","root","qwerty");
 				 String pdept = "Engineering";
 				 myStmnt =myConn.prepareCall("{call greet_the_department(?)}");
 				 myStmnt.registerOutParameter(1,100);
